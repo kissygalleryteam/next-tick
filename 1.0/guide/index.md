@@ -1,6 +1,6 @@
 ## 综述
 
-next-tick 是
+next-tick 提供了标准浏览器下最接近 0 的 setTimeout 方法 : )
 
 * 版本：1.0
 * 作者：莫争
@@ -16,7 +16,7 @@ next-tick 是
          nextTick.push(b);
          nextTick.push(c);
          ...
-    })
+    });
 
 ## API说明
 
