@@ -67,7 +67,7 @@
           doc.getElementsByTagName('td')[1].innerHTML = '100 次迭代用时：' + (S.now() - startTime) + '毫秒';
 
           i = 0;
-          startTime = Date.now();
+          startTime = S.now();
           setTimeout(test2, 0);
         } else {
           nextTick.push(test1);
