@@ -16,7 +16,7 @@ next-tick 提供了标准浏览器下最接近 0 的 setTimeout 方法 : )
          nextTick.push(b);
          nextTick.push(c);
          ...
-    })
+    });
 
 ## API说明
 
