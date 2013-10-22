@@ -1,0 +1,14 @@
+{
+    "name": "next-tick",
+    "version": "1.0",
+    "desc": "",
+    "cover": "",
+    "tag":"postMessage,setTimeout",
+    "author": {
+        "name": "莫争",
+        "email": "gaoli.gl@taobao.com",
+        "page": ""
+    },
+    "type": "kissy-gallery",
+    "type-url": "http://gallery.kissyui.com/guide"
+}
