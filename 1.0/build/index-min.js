@@ -1,0 +1,2 @@
+/*!build time : 2013-10-22 3:51:12 PM*/
+KISSY.add("gallery/next-tick/1.0/index",function(a){var b=window,c=!b.ActiveXObject&&b.postMessage,d=function(){this.init()};return d.prototype.init=function(){var a=this;a.tickQueue=[],c&&a.bind()},d.prototype.bind=function(){var a=this,c=a.tickQueue,d=function(a){if(a.source==b&&"tick"==a.data&&(a.stopPropagation(),c.length>0)){var d=c.shift();d()}};b.addEventListener("message",d,!0)},d.prototype.push=function(d){var e=this,f=e.tickQueue;a.isFunction(d)&&(c?(f.push(d),b.postMessage("tick","*")):setTimeout(function(){d()},0))},d});

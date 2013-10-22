@@ -1,10 +1,16 @@
+/*
+combined files : 
+
+gallery/next-tick/1.0/index
+
+*/
 /**
  * @fileOverview next-tick
  * @author 莫争 <gaoli.gl@taobao.com>
  * @version 1.0
  */
 
-KISSY.add(function(S) {
+KISSY.add('gallery/next-tick/1.0/index',function(S) {
 
   var win = window,
       has = !win.ActiveXObject && win.postMessage;
