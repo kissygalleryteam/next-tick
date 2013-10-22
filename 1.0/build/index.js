@@ -13,6 +13,7 @@ gallery/next-tick/1.0/index
 KISSY.add('gallery/next-tick/1.0/index',function(S) {
 
   var win = window,
+      msg = 'tick',
       has = !win.ActiveXObject && win.postMessage;
 
   /**
@@ -40,7 +41,7 @@ KISSY.add('gallery/next-tick/1.0/index',function(S) {
         tickQueue = self.tickQueue;
 
     var msgHandle = function(event) {
-      if (event.source == win && event.data == 'tick') {
+      if (event.source == win && event.data == msg) {
         event.stopPropagation();
         if (tickQueue.length > 0) {
           var fn = tickQueue.shift();
@@ -63,7 +64,7 @@ KISSY.add('gallery/next-tick/1.0/index',function(S) {
     if (S.isFunction(fn)) {
       if (has) {
         tickQueue.push(fn);
-        win.postMessage('tick', '*');
+        win.postMessage(msg, '*');
       } else {
         setTimeout(function() {
           fn();
