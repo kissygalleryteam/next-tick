@@ -1,0 +1,2 @@
+/*!build time : 2013-10-22 3:53:46 PM*/
+KISSY.add("kg/next-tick/2.0.0/index",function(a){var b=window,c="tick",d=!b.ActiveXObject&&b.postMessage,e=function(){this.init()};return e.prototype.init=function(){var a=this;a.tickQueue=[],d&&a.bind()},e.prototype.bind=function(){var a=this,d=a.tickQueue,e=function(a){if(a.source==b&&a.data==c&&(a.stopPropagation(),d.length>0)){var e=d.shift();e()}};b.addEventListener("message",e,!0)},e.prototype.push=function(e){var f=this,g=f.tickQueue;a.isFunction(e)&&(d?(g.push(e),b.postMessage(c,"*")):setTimeout(function(){e()},0))},e});
